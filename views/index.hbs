@@ -1,0 +1,36 @@
+{{!-- Template note to use when duplicating --}}
+<div class="note-wrapper" id="note-template" style="position: absolute; display:none">
+    <div class="note" style="position: absolute;">
+        <div class="content-container">
+            <div class="header-wrapper">
+            <div class="header-icon-container">
+                <div class="header-icon"><i class="material-icons delete-button" data-id="">delete</i></div>
+            </div>
+            </div>
+            <div class="body-wrapper">
+                <textarea class="note-textarea" data-id=""></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{#each notes }}
+
+{{!-- Helper just for initial alignment --}}
+<div class="note-wrapper" style="position: absolute; top: {{top}}px; left: {{left}}px; width: {{width}}px; height: {{height}}px" data-id="{{_id}}">
+    <div class="note" style="position: absolute;">
+        <div class="content-container">
+            <div class="header-wrapper">
+            <div class="header-icon-container">
+                <div class="header-icon"><i class="material-icons delete-button" data-id="{{_id}}">delete</i></div>
+            </div>
+            </div>
+            <div class="body-wrapper">
+                <textarea class="note-textarea" data-id="{{_id}}">{{ body }}</textarea>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each }}
+
+<i class="material-icons" id="add-button">note_add</i>
