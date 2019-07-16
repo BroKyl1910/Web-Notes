@@ -16,7 +16,7 @@ router.get('/', async function (req, res, next) {
   var docs = await db.collection('Notes').find().toArray();
   client.close();
 
-  res.render('index', { title: 'Notes', notes: docs });
+  res.render('index', { title: 'Web Notes', notes: docs });
 });
 
 module.exports = router;

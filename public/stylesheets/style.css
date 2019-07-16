@@ -21,8 +21,9 @@ body::-webkit-scrollbar-thumb, .body-wrapper::-webkit-scrollbar-thumb,.note-text
   height: 300px;
   box-shadow: 10px 10px 25px 6px rgba(0,0,0,0.8);
   border-radius: 10px;
-  background-color: rgb(51,51,51);
+  /* background-color: rgb(51,51,51); */
   background-color: #012b37;
+  background-color: rgb(29, 30, 34);
   color: white;
   overflow-x:hidden;
   overflow-y:hidden;
@@ -39,6 +40,7 @@ body::-webkit-scrollbar-thumb, .body-wrapper::-webkit-scrollbar-thumb,.note-text
 .note-wrapper:hover{
   cursor: grab;
   background-color: #012631;
+  background-color: rgb(15, 15, 17);
 }
 
 .note-wrapper:active{
@@ -123,6 +125,7 @@ body::-webkit-scrollbar-thumb, .body-wrapper::-webkit-scrollbar-thumb,.note-text
   font-size: 48px;
   color: white;
   background-color: #012b37;
+  background-color: rgb(29, 30, 34);
   padding: 15px;
   border-radius: 50%;
   box-shadow: 10px 10px 25px 6px rgba(0,0,0,0.8);
@@ -132,4 +135,5 @@ body::-webkit-scrollbar-thumb, .body-wrapper::-webkit-scrollbar-thumb,.note-text
 #add-button:hover{
   cursor: pointer;
   background-color: #012631;
+  background-color: rgb(15, 15, 17);
 }
