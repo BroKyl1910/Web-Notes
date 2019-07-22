@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
 var ObjectID = require('mongodb').ObjectID;
-var url = 'mongodb://localhost:27017';
+var url = process.env.MONGODB_URI || 'mongodb://localhost/web-notes';
 
 router.post("/", async (req, res) => {
   var client = await MongoClient.connect(url, { useNewUrlParser: true });

@@ -92,7 +92,7 @@ body::-webkit-scrollbar-thumb, .body-wrapper::-webkit-scrollbar-thumb,.note-text
   font-family: 'montserrat';
   font-size: 1.1em;
   display: block;
-  height: 70%;
+  height: 80%;
   overflow: auto;
 }
 
@@ -100,12 +100,13 @@ body::-webkit-scrollbar-thumb, .body-wrapper::-webkit-scrollbar-thumb,.note-text
   background-color: transparent;
   color: white;
   font-family: 'Montserrat', serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-left: 20px;
   width: calc(100% - 40px);
   height: 90%;
   border: none; 
   resize: none;
+  white-space: nowrap;
 }
 
 .note-textarea:focus{
