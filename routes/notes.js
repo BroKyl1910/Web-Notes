@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
 var ObjectID = require('mongodb').ObjectID;
-var url = process.env.MONGODB_URI || 'mongodb://localhost/';
+var config = require('../config.js')
+var url = config.mongo_url;
 
 router.post("/", async (req, res) => {
   var client = await MongoClient.connect(url, { useNewUrlParser: true });

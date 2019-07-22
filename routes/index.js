@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://localhost:27017';
+var config = require('../config.js')
+var url = config.mongo_url;
 
 
 /* GET home page. */
